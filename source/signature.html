@@ -148,9 +148,17 @@
         border-top: none;
       }
 
+      .card__contacts-address {
+        width: 100%;
+      }
+
       .card__contacts-item-wrapper {
         padding-right: 23px;
         padding-bottom: 7px;
+      }
+
+      .card__contacts-item {
+        width: 100%;
       }
 
       .card__contacts-tel .card__contacts-item-wrapper {
@@ -159,6 +167,7 @@
 
       .card__contacts-icon-wrapper {
         vertical-align: top;
+        width: 22px;
         padding-right: 5px;
       }
 
@@ -231,7 +240,10 @@
       }
 
       .button-2 {
-        display: inline-block;
+        display: block;
+      }
+
+      .button-2__inner {
         padding: 6px 16px;
         border-width: 1px;
         border-style: solid;
@@ -315,7 +327,7 @@
                                     <table class="card__contacts-tel column" cellspacing="0" cellpadding="0" border="0">
                                       <tr>
                                         <td class="card__contacts-item-wrapper">
-                                          <table cellspacing="0" cellpadding="0" border="0">
+                                          <table class="card__contacts-item" cellspacing="0" cellpadding="0" border="0">
                                             <tr>
                                               <td class="card__contacts-icon-wrapper">
                                                 <img class="card__contacts-icon" src="https://www.studioardo.ru/upload/email-phone-icon.png" width="22" height="22" border="0" alt="Значок телефона.">
@@ -332,7 +344,7 @@
                                     <table class="column" cellspacing="0" cellpadding="0" border="0">
                                       <tr>
                                         <td class="card__contacts-item-wrapper">
-                                          <table cellspacing="0" cellpadding="0" border="0">
+                                          <table class="card__contacts-item" cellspacing="0" cellpadding="0" border="0">
                                             <tr>
                                               <td class="card__contacts-icon-wrapper">
                                                 <img class="card__contacts-icon" src="https://www.studioardo.ru/upload/email-letter-icon.png" width="22" height="22" border="0" alt="Значок конверта.">
@@ -350,10 +362,10 @@
                                 </tr>
                                 <tr class="card__contacts-row">
                                   <td class="card__contacts-row-inner">
-                                    <table cellspacing="0" cellpadding="0" border="0">
+                                    <table class="card__contacts-address" cellspacing="0" cellpadding="0" border="0">
                                       <tr>
                                         <td class="card__contacts-item-wrapper">
-                                          <table cellspacing="0" cellpadding="0" border="0">
+                                          <table class="card__contacts-item" cellspacing="0" cellpadding="0" border="0">
                                             <tr>
                                               <td class="card__contacts-icon-wrapper">
                                                 <img class="card__contacts-icon" src="https://www.studioardo.ru/upload/email-map-marker-icon.png" width="22" height="22" border="0" alt="Значок метки на карте.">
@@ -407,23 +419,23 @@
                           <tr>
                             <td class="column-wrapper">
                               <!--[if mso]><table cellspacing="0" cellpadding="0" border="0"><tr><td valign="top"><![endif]-->
-                              <table class="column" cellspacing="0" cellpadding="0" border="0">
+                              <table class="column column--v-align-middle" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
                                   <td class="card__button-1-wpapper">
-                                    <a class="card__button button-1" href="https://www.studioardo.ru" target="_blank">
+                                    <a class="button-1" href="https://www.studioardo.ru" target="_blank">
                                       <b class="button-1__text">studioardo.ru</b>
                                     </a>
                                   </td>
                                 </tr>
                               </table>
                               <!--[if mso]></td><td style="width:0px"></td><td valign="top"><![endif]-->
-                              <table class="column" cellspacing="0" cellpadding="0" border="0">
+                              <table class="column column--v-align-middle" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
                                   <td>
-                                    <a class="card__button button-2" href="https://www.studioardo.ru/#js-modal-message" target="_blank">
+                                    <a class="button-2" href="https://www.studioardo.ru/#js-modal-message" target="_blank">
                                       <table cellspacing="0" cellpadding="0" border="0">
                                         <tr>
-                                          <td>
+                                          <td class="button-2__inner">
                                             <span class="button-2__text">Обратная связь</span>
                                           </td>
                                         </tr>

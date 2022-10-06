@@ -3,7 +3,7 @@ const {src, dest} = require('gulp');
 const inlineCss = require('gulp-inline-css');
 
 const html = () => {
-  return src('./source/signature.html')
+  return src('./source/favorites.html')
     .pipe(inlineCss({
       applyTableAttributes: true,
       preserveMediaQueries: true,

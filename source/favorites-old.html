@@ -75,6 +75,16 @@
         background-color: #ffffff;
       }
 
+      .column-wrapper {
+        font-size: 0;
+      }
+
+      .column {
+        vertical-align: top;
+        display: inline-table;
+        font-size: 14px;
+      }
+
       .header {
         width: 100%;
       }
@@ -88,7 +98,10 @@
 
       .logo {
         width: 260px;
-        padding-top: 7px;
+      }
+
+      .logo__inner {
+        padding-top: 8px;
       }
 
       .header__contacts {
@@ -130,12 +143,12 @@
         padding-left: 20px;
       }
 
-      .menu__item {
+      .menu__item-inner {
         padding-top: 10px;
         padding-right: 31px;
       }
 
-      .menu__item:last-child {
+      .menu__item--last .menu__item-inner {
         padding-right: 0;
       }
 
@@ -305,7 +318,7 @@
         padding-left: 40px;
       }
 
-      .features__item {
+      .features__item-wrapper {
         width: 260px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -367,7 +380,7 @@
         padding-left: 40px;
       }
 
-      .contacts__item {
+      .contacts__item-wrapper {
         width: 260px;
         padding-top: 4px;
         padding-bottom: 4px;
@@ -435,7 +448,7 @@
         padding-left: 36px;
       }
 
-      .categories__item {
+      .categories__item-wrapper {
         width: 168px;
         padding-right: 4px;
         padding-left: 4px;
@@ -468,8 +481,8 @@
   			</v:background>
 		  <![endif]-->
 
-      <!--  Favorites -->
-      <table class="fav-mailing" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#e6e6e6">
+      <!--  Fav-mailing -->
+      <table class="fav-mailing" width="100%" cellspacing="0" cellpadding="0" border="0">
         <tr>
           <td>
             <table class="fav-mailing__inner" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff">
@@ -477,64 +490,92 @@
                 <td>
 
                   <!-- Шапка -->
-                  <table class="header" cellspacing="0" cellpadding="0" border="0" bgcolor="#f8f8f8">
+                  <table class="header column-wrapper" cellspacing="0" cellpadding="0" border="0" bgcolor="#f8f8f8">
                     <tr>
                       <td class="header__inner">
-                        <table cellspacing="0" cellpadding="0" border="0">
+                        <!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0" border="0"><tr><td style="width:260px" valign="top"><![endif]-->
+                        <table class="logo column" cellspacing="0" cellpadding="0" border="0">
                           <tr>
-                            <td class="logo" valign="top">
+                            <td class="logo__inner">
                               <a href="https://www.studioardo.ru" target="_blank">
                                 <img src="https://studioardo.ru/img/email-2-logo.png" width="125" height="38" border="0" alt="Логотип в виде текста ARDO Studio.">
                               </a>
                             </td>
-                            <td class="header__contacts">
-                              <table cellspacing="0" cellpadding="0" border="0">
-                                <tr>
-                                  <td class="header__contacts-text">
-                                    На пути к интерьеру мечты
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="header__contacts-link-wrapper">
-                                    <a class="contacts-link" href="tel:+74950237775" target="_blank">
-                                      <b>+7 (495) 023-77-75</b>
-                                    </a>
-                                  </td>
-                                </tr>
-                              </table>
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:0px"></td><td style="width:260px" valign="top"><![endif]-->
+                        <table class=" header__contacts column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td class="header__contacts-text">
+                              На пути к интерьеру мечты
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="header__contacts-link-wrapper">
+                              <a class="contacts-link" href="tel:+74950237775" target="_blank">
+                                <b>+7 (495) 023-77-75</b>
+                              </a>
                             </td>
                           </tr>
                         </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
                       </td>
                     </tr>
                   </table>
 
                   <!-- Меню -->
-                  <table class="menu" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f8f8f8">
+                  <table class="menu column-wrapper" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#f8f8f8">
                     <tr>
                       <td class="menu__inner" align="center">
-                        <table cellspacing="0" cellpadding="0" border="0">
+                        <!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0" border="0"><tr><td valign="top"><![endif]-->
+                        <table class="menu__item column" cellspacing="0" cellpadding="0" border="0">
                           <tr>
-                            <td class="menu__item">
+                            <td class="menu__item-inner">
                               <a class="menu__link" href="https://www.studioardo.ru/catalog-collections/keramicheskaya-plitka/" target="_blank">Плитка</a>
                             </td>
-                            <td class="menu__item">
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:0px"></td><td valign="top"><![endif]-->
+                        <table class="menu__item column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td class="menu__item-inner">
                               <a class="menu__link" href="https://www.studioardo.ru/catalog-collections/keramogranit/" target="_blank">Керамогранит</a>
                             </td>
-                            <td class="menu__item">
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:0px"></td><td valign="top"><![endif]-->
+                        <table class="menu__item column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td class="menu__item-inner">
                               <a class="menu__link" href="https://www.studioardo.ru/workshop/mozaikpano/" target="_blank">Мозаика</a>
                             </td>
-                            <td class="menu__item">
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:0px"></td><td valign="top"><![endif]-->
+                        <table class="menu__item column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td class="menu__item-inner">
                               <a class="menu__link" href="https://www.studioardo.ru/catalog-collections/santekhnika/" target="_blank">Сантехника</a>
                             </td>
-                            <td class="menu__item">
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:0px"></td><td valign="top"><![endif]-->
+                        <table class="menu__item column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td class="menu__item-inner">
                               <a class="menu__link" href="https://www.studioardo.ru/catalog/icamens/" target="_blank">Камень</a>
                             </td>
-                            <td class="menu__item">
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:0px"></td><td valign="top"><![endif]-->
+                        <table class="menu__item menu__item--last column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td class="menu__item-inner">
                               <a class="menu__link" href="https://www.studioardo.ru/catalog-collections/parket/" target="_blank">Паркет</a>
                             </td>
                           </tr>
                         </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
                       </td>
                     </tr>
                   </table>
@@ -562,13 +603,13 @@
                   </table>
 
                   <!-- Каталог -->
-                  <table class="catalog" cellspacing="0" cellpadding="0" border="0">
-                    <!-- Ряд каталога -->
+                  <table class="catalog column-wrapper" cellspacing="0" cellpadding="0" border="0">
                     <tr>
                       <td class="catalog__inner">
-                        <table cellspacing="0" cellpadding="0" border="0">
+                        <!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0" border="0"><tr><td style="width:260px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
                           <tr>
-                            <td valign="top">
+                            <td>
                               <!-- Карточка товара -->
                               <table class="good-card" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
@@ -602,8 +643,12 @@
                               </table>
                               <!-- Конец карточки товара -->
                             </td>
-
-                            <td valign="top">
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:0px"></td><td style="width:260px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td>
                               <!-- Карточка товара -->
                               <table class="good-card" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
@@ -639,16 +684,15 @@
                             </td>
                           </tr>
                         </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
                       </td>
                     </tr>
-                    <!-- Конец ряда каталога -->
-
-                    <!-- Ряд каталога -->
                     <tr>
                       <td class="catalog__inner">
-                        <table cellspacing="0" cellpadding="0" border="0">
+                        <!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0" border="0"><tr><td style="width:260px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
                           <tr>
-                            <td valign="top">
+                            <td>
                               <!-- Карточка товара -->
                               <table class="good-card" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
@@ -682,8 +726,12 @@
                               </table>
                               <!-- Конец карточки товара -->
                             </td>
-
-                            <td valign="top">
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:0px"></td><td style="width:260px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td>
                               <!-- Карточка товара -->
                               <table class="good-card" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
@@ -719,11 +767,10 @@
                             </td>
                           </tr>
                         </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
                       </td>
                     </tr>
-                    <!-- Конец ряда каталога -->
                   </table>
-                  <!-- Конец каталога -->
 
                   <!-- Преимущества: заголовок -->
                   <table class="features-heading" cellspacing="0" cellpadding="0" border="0">
@@ -741,13 +788,13 @@
                   </table>
 
                   <!-- Преимущества: список -->
-                  <table class="features" cellspacing="0" cellpadding="0" border="0">
+                  <table class="features column-wrapper" cellspacing="0" cellpadding="0" border="0">
                     <tr>
                       <td class="features__inner">
-                        <table cellspacing="0" cellpadding="0" border="0">
+                        <!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0" border="0"><tr><td style="width:260px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
                           <tr>
-                            <td valign="top" class="features__item">
-                              <!-- Карточка преимущества -->
+                            <td class="features__item-wrapper">
                               <table class="feature" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
                                   <td class="feature__img-wrapper">
@@ -760,10 +807,13 @@
                                   </td>
                                 </tr>
                               </table>
-                              <!-- Конец карточки преимущества -->
                             </td>
-                            <td valign="top" class="features__item">
-                              <!-- Карточка преимущества -->
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:0px"></td><td style="width:260px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td class="features__item-wrapper">
                               <table class="feature" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
                                   <td class="feature__img-wrapper">
@@ -776,12 +826,18 @@
                                   </td>
                                 </tr>
                               </table>
-                              <!-- Конец карточки преимущества -->
                             </td>
                           </tr>
+                        </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="features__inner">
+                        <!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0" border="0"><tr><td style="width:260px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
                           <tr>
-                            <td valign="top" class="features__item">
-                              <!-- Карточка преимущества -->
+                            <td class="features__item-wrapper">
                               <table class="feature" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
                                   <td class="feature__img-wrapper">
@@ -794,10 +850,13 @@
                                   </td>
                                 </tr>
                               </table>
-                              <!-- Конец карточки преимущества -->
                             </td>
-                            <td valign="top" class="features__item">
-                              <!-- Карточка преимущества -->
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:0px"></td><td style="width:260px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td class="features__item-wrapper">
                               <table class="feature" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
                                   <td class="feature__img-wrapper">
@@ -810,14 +869,14 @@
                                   </td>
                                 </tr>
                               </table>
-                              <!-- Конец карточки преимущества -->
                             </td>
                           </tr>
-                          <tr>
-                            <td class="features__indent-bottom"></td>
-                          </tr>
                         </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
                       </td>
+                    </tr>
+                    <tr>
+                      <td class="features__indent-bottom"></td>
                     </tr>
                   </table>
 
@@ -847,23 +906,30 @@
                   </table>
 
                   <!-- Контакты -->
-                  <table class="contacts" cellspacing="0" cellpadding="0" border="0" bgcolor="#f8f8f8">
+                  <table class="contacts column-wrapper" cellspacing="0" cellpadding="0" border="0" bgcolor="#f8f8f8">
                     <tr>
                       <td class="contacts__inner">
-                        <table cellspacing="0" cellpadding="0" border="0">
+                        <!--[if mso]><table style="width:520px" cellpadding="0" cellspacing="0" border="0"><tr><td style="width:260px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
                           <tr>
-                            <td valign="top" class="contacts__item">
+                            <td class="contacts__item-wrapper">
                               <a class="contacts-link" href="tel:+79450237775" target="_blank">
                                 <b>+7 (495) 023-77-75</b>
                               </a>
                             </td>
-                            <td valign="top" class="contacts__item">
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:0px"></td><td style="width:260px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td class="contacts__item-wrapper">
                               <a class="contacts-link" href="mailto:zakaz@ardostudio.ru" target="_blank">
                                 <b>zakaz@ardostudio.ru</b>
                               </a>
                             </td>
                           </tr>
                         </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
                       </td>
                     </tr>
                   </table>
@@ -917,14 +983,14 @@
                     </tr>
                   </table>
 
-                  <!-- Категории товаров -->
-                  <table class="categories" cellspacing="0" cellpadding="0" border="0" bgcolor="#f8f8f8">
+                  <!-- Категории -->
+                  <table class="categories column-wrapper" cellspacing="0" cellpadding="0" border="0" bgcolor="#f8f8f8">
                     <tr>
                       <td class="categories__inner">
-                        <table cellspacing="0" cellpadding="0" border="0">
+                        <!--[if mso]><table style="width:528px" cellpadding="0" cellspacing="0" border="0"><tr><td style="width:176px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
                           <tr>
-                            <td valign="top" class="categories__item">
-                              <!-- Категория -->
+                            <td class="categories__item-wrapper">
                               <table class="category" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
                                   <td class="category__image-wrapper">
@@ -948,10 +1014,13 @@
                                   </td>
                                 </tr>
                               </table>
-                              <!-- Конец категории -->
                             </td>
-                            <td valign="top" class="categories__item">
-                              <!-- Категория -->
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:176px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td class="categories__item-wrapper">
                               <table class="category" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
                                   <td class="category__image-wrapper">
@@ -975,10 +1044,13 @@
                                   </td>
                                 </tr>
                               </table>
-                              <!-- Конец категории -->
                             </td>
-                            <td valign="top" class="categories__item">
-                              <!-- Категория -->
+                          </tr>
+                        </table>
+                        <!--[if mso]></td><td style="width:176px" valign="top"><![endif]-->
+                        <table class="column" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td class="categories__item-wrapper">
                               <table class="category" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
                                   <td class="category__image-wrapper">
@@ -1002,14 +1074,13 @@
                                   </td>
                                 </tr>
                               </table>
-                              <!-- Конец категории -->
                             </td>
                           </tr>
                         </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
                       </td>
                     </tr>
                   </table>
-                  <!-- Конец категорий товаров -->
 
                 </td>
               </tr>
@@ -1017,7 +1088,7 @@
           </td>
         </tr>
       </table>
-      <!-- End of favorites -->
+      <!-- End of signature -->
 
     </div>
   </body>

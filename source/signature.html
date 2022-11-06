@@ -89,25 +89,9 @@
         width: 100%;
       }
 
-      .column-wrapper {
-        font-size: 0;
-      }
-
-      .column {
-        vertical-align: top;
-        display: inline-table;
-        font-size: 16px;
-      }
-
-      .column--v-align-middle {
-        vertical-align: middle;
-      }
-
       .card__image-column {
-        width: 190px;
-      }
-
-      .photo__inner {
+        width: 150px;
+        padding-right: 40px;
         padding-bottom: 10px;
       }
 
@@ -157,22 +141,20 @@
         padding-bottom: 7px;
       }
 
+      .card__contacts-item-wrapper--tel {
+        padding-right: 27px;
+      }
+
       .card__contacts-item {
         width: 100%;
       }
 
-      .card__contacts-tel .card__contacts-item-wrapper {
-        padding-right: 27px;
-      }
-
       .card__contacts-icon-wrapper {
-        vertical-align: top;
         width: 22px;
         padding-right: 5px;
       }
 
       .card__contacts-link-wrapper {
-        vertical-align: middle;
         padding-bottom: 1px;
       }
 
@@ -188,7 +170,6 @@
       }
 
       .card__contacts-text {
-        vertical-align: middle;
         padding-bottom: 5px;
         font-family: "Arial",sans-serif;
         font-size: 14px;
@@ -200,7 +181,6 @@
       }
 
       .card__socials {
-        vertical-align: middle;
         padding-top: 10px;
         padding-bottom: 10px;
       }
@@ -220,10 +200,6 @@
         padding-top: 10px;
         padding-right: 13px;
         padding-bottom: 10px;
-      }
-
-      .card__socials-link img {
-        vertical-align: middle;
       }
 
       .card__button-1-wpapper {
@@ -280,7 +256,7 @@
 		  <![endif]-->
 
       <!-- Letter signature -->
-      <table class="signature" width="100%" cellspacing="0" cellpadding="0" border="0">
+      <table class="signature" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">
         <tr>
           <td>
             <table class="signature__container" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff">
@@ -295,19 +271,13 @@
                       </td>
                     </tr>
                   </table>
-                  <table class="card column-wrapper" cellspacing="0" cellpadding="0" border="0">
+                  <table class="card" cellspacing="0" cellpadding="0" border="0">
                     <tr>
-                      <td>
-                        <!--[if mso]><table style="width:632px" cellspacing="0" cellpadding="0" border="0"><tr><td style="width:190px" valign="top"><![endif]-->
-                        <table class="card__image-column photo column" cellspacing="0" cellpadding="0" border="0">
-                          <tr>
-                            <td class="photo__inner">
-                              <img src="https://www.studioardo.ru/upload/email-manager.jpg" width="150" height="220" border="0" alt="Мужчина, сидящий за столом.">
-                            </td>
-                          </tr>
-                        </table>
-                        <!--[if mso]></td><td style="width:0px"></td><td style="width:442px" valign="top"><![endif]-->
-                        <table class="card__text-column column" cellspacing="0" cellpadding="0" border="0">
+                      <td class="card__image-column" valign="top">
+                        <img src="https://www.studioardo.ru/upload/email-manager.jpg" width="150" height="220" border="0" alt="Мужчина, сидящий за столом.">
+                      </td>
+                      <td valign="top">
+                        <table class="card__text-column" cellspacing="0" cellpadding="0" border="0">
                           <tr>
                             <td class="card__title">
                               <b>Павел Захаров</b>
@@ -322,11 +292,10 @@
                             <td>
                               <table class="card__contacts" cellspacing="0" cellpadding="0" border="0">
                                 <tr class="card__contacts-row">
-                                  <td class="card__contacts-row-inner column-wrapper">
-                                    <!--[if mso]><table cellspacing="0" cellpadding="0" border="0"><tr><td valign="top"><![endif]-->
-                                    <table class="card__contacts-tel column" cellspacing="0" cellpadding="0" border="0">
+                                  <td class="card__contacts-row-inner">
+                                    <table cellspacing="0" cellpadding="0" border="0">
                                       <tr>
-                                        <td class="card__contacts-item-wrapper">
+                                        <td class="card__contacts-item-wrapper card__contacts-item-wrapper--tel">
                                           <table class="card__contacts-item" cellspacing="0" cellpadding="0" border="0">
                                             <tr>
                                               <td class="card__contacts-icon-wrapper">
@@ -338,11 +307,6 @@
                                             </tr>
                                           </table>
                                         </td>
-                                      </tr>
-                                    </table>
-                                    <!--[if mso]></td><td style="width:0px"></td><td valign="top"><![endif]-->
-                                    <table class="column" cellspacing="0" cellpadding="0" border="0">
-                                      <tr>
                                         <td class="card__contacts-item-wrapper">
                                           <table class="card__contacts-item" cellspacing="0" cellpadding="0" border="0">
                                             <tr>
@@ -357,17 +321,16 @@
                                         </td>
                                       </tr>
                                     </table>
-                                    <!--[if mso]></td></tr></table><![endif]-->
                                   </td>
                                 </tr>
                                 <tr class="card__contacts-row">
                                   <td class="card__contacts-row-inner">
-                                    <table class="card__contacts-address" cellspacing="0" cellpadding="0" border="0">
+                                    <table cellspacing="0" cellpadding="0" border="0">
                                       <tr>
                                         <td class="card__contacts-item-wrapper">
                                           <table class="card__contacts-item" cellspacing="0" cellpadding="0" border="0">
                                             <tr>
-                                              <td class="card__contacts-icon-wrapper">
+                                              <td class="card__contacts-icon-wrapper" valign="top">
                                                 <img class="card__contacts-icon" src="https://www.studioardo.ru/upload/email-map-marker-icon.png" width="22" height="22" border="0" alt="Значок метки на карте.">
                                               </td>
                                               <td class="card__contacts-text">
@@ -384,53 +347,46 @@
                             </td>
                           </tr>
                           <tr>
-                            <td class="card__socials column-wrapper">
-                              <!--[if mso]><table cellspacing="0" cellpadding="0" border="0"><tr><td valign="middle"><![endif]-->
-                              <table class="column column--v-align-middle" cellspacing="0" cellpadding="0" border="0">
+                            <td class="card__socials">
+                              <table cellspacing="0" cellpadding="0" border="0">
                                 <tr>
                                   <td class="card__socials-text">
                                     Мы в соцсетях:
                                   </td>
+                                  <td>
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                      <tr>
+                                        <td class="card__socials-link">
+                                          <a href="https://www.youtube.com/channel/UCeCClWuZGmBDn_2L5QmoEyA" target="_blank">
+                                            <img src="https://www.studioardo.ru/upload/email-youtube-icon.png" width="34" height="32" border="0" alt="YouTube.">
+                                          </a>
+                                        </td>
+                                        <td class="card__socials-link">
+                                          <a href="https://www.pinterest.ru/ardostudio/_created/" target="_blank">
+                                            <img src="https://www.studioardo.ru/upload/email-pinterest-icon.png" width="17" height="32" border="0" alt="Pinterest.">
+                                          </a>
+                                        </td>
+                                        <td class="card__socials-link">
+                                          <a href="https://vk.com/ardo_studio" target="_blank">
+                                            <img src="https://www.studioardo.ru/upload/email-vk-icon.png" width="34" height="32" border="0" alt="VK.">
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
                                 </tr>
                               </table>
-                              <!--[if mso]></td><td style="width:0px"></td><td valign="middle"><![endif]-->
-                              <table class="column column--v-align-middle" cellspacing="0" cellpadding="0" border="0">
-                                <tr>
-                                  <td class="card__socials-link">
-                                    <a href="https://www.youtube.com/channel/UCeCClWuZGmBDn_2L5QmoEyA" target="_blank">
-                                      <img src="https://www.studioardo.ru/upload/email-youtube-icon.png" width="34" height="32" border="0" alt="YouTube.">
-                                    </a>
-                                  </td>
-                                  <td class="card__socials-link">
-                                    <a href="https://www.pinterest.ru/ardostudio/_created/" target="_blank">
-                                      <img src="https://www.studioardo.ru/upload/email-pinterest-icon.png" width="17" height="32" border="0" alt="Pinterest.">
-                                    </a>
-                                  </td>
-                                  <td class="card__socials-link">
-                                    <a href="https://vk.com/ardo_studio" target="_blank">
-                                      <img src="https://www.studioardo.ru/upload/email-vk-icon.png" width="34" height="32" border="0" alt="VK.">
-                                    </a>
-                                  </td>
-                                </tr>
-                              </table>
-                              <!--[if mso]></td></tr></table><![endif]-->
                             </td>
                           </tr>
                           <tr>
-                            <td class="column-wrapper">
-                              <!--[if mso]><table cellspacing="0" cellpadding="0" border="0"><tr><td valign="top"><![endif]-->
-                              <table class="column column--v-align-middle" cellspacing="0" cellpadding="0" border="0">
+                            <td>
+                              <table cellspacing="0" cellpadding="0" border="0">
                                 <tr>
                                   <td class="card__button-1-wpapper">
                                     <a class="button-1" href="https://www.studioardo.ru" target="_blank">
                                       <b class="button-1__text">studioardo.ru</b>
                                     </a>
                                   </td>
-                                </tr>
-                              </table>
-                              <!--[if mso]></td><td style="width:0px"></td><td valign="top"><![endif]-->
-                              <table class="column column--v-align-middle" cellspacing="0" cellpadding="0" border="0">
-                                <tr>
                                   <td>
                                     <a class="button-2" href="https://www.studioardo.ru/#js-modal-message" target="_blank">
                                       <table cellspacing="0" cellpadding="0" border="0">
@@ -444,11 +400,9 @@
                                   </td>
                                 </tr>
                               </table>
-                              <!--[if mso]></td></tr></table><![endif]-->
                             </td>
                           </tr>
                         </table>
-                        <!--[if mso]></td></tr></table><![endif]-->
                       </td>
                     </tr>
                   </table>
